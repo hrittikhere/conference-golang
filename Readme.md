@@ -6,22 +6,20 @@ You will learn everything you need to get started with Go and start using it in 
 
 ## Table of Contents
 
-Intro & Course Overview
-
-Variables & Constants in Go
-Formatted Output - printf 
-Data Types in Go
-Getting User Input
-What is a Pointer?
-Book Ticket Logic
-Arrays & Slices
-Loops in Go
-Conditionals (if / else) and Boolean Data Type
-Validate User Input
-Switch Statement
-Encapsulate Logic with Functions
-Organize Code with Go Packages
-Scope Rules in Go
-Maps
-Structs
-Goroutines - Concurrency in Go
+> 1. Variables & Constants in Go
+> 1. Formatted Output - printf 
+> 1. Data Types in Go
+> 1. Getting User Input
+> 1. What is a Pointer?
+> 1. Book Ticket Logic
+> 1. Arrays & Slices
+> 1. Loops in Go
+> 1. Conditionals (if / else) and Boolean Data Type
+> 1. Validate User Input
+> 1. Switch Statement
+> 1. Encapsulate Logic with Functions
+> 1. Organize Code with Go Packages
+> 1. Scope Rules in Go
+> 1. Maps
+> 1. Structs
+> 1. Goroutines - Concurrency in Go
