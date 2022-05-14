@@ -5,33 +5,37 @@ import (
 )
 
 func main() {
+	booking := []string{}
 	const confTicket = 50
-	var remainingTickets = 50
+	var remainingTickets uint = 50
 	var firstName string
 	var lastName string
 	var email string
 	var userTickets uint
 	var conferenceName = "GoLang Conf"
 
-	fmt.Printf("%v of %v are available \n", remainingTickets, confTicket)
-	fmt.Printf("Welcome to our %s Ticket Booking System \n", conferenceName)
+	for {
+		fmt.Printf("%v of %v are available \n", remainingTickets, confTicket)
+		fmt.Printf("Welcome to our %s Ticket Booking System \n", conferenceName)
 
+		fmt.Println("Enter your first name: ")
+		fmt.Scan(&firstName)
 
-	fmt.Println("Enter your first name: ")
-	fmt.Scan(&firstName)
+		fmt.Println("Enter your last name: ")
+		fmt.Scan(&lastName)
 
-	fmt.Println("Enter your last name: ")
-	fmt.Scan(&lastName)
+		fmt.Println("Enter your email address: ")
+		fmt.Scan(&email)
 
-	fmt.Println("Enter your email address: ")
-	fmt.Scan(&email)
+		fmt.Println("Enter number of tickets: ")
+		fmt.Scan(&userTickets)
 
-	fmt.Println("Enter number of tickets: ")
-	fmt.Scan(&userTickets)
+		fmt.Printf("Thank you %v %v for booking %v tickets. You will receive a confirmation email at %v\n", firstName, lastName, userTickets, email)
 
-	fmt.Printf("Thank you %v %v for booking %v tickets. You will receive a confirmation email at %v\n", firstName, lastName, userTickets, email)
-	fmt.Printf("%v tickets remaining for %v\n", remainingTickets, conferenceName)
+		booking = append(booking, firstName+" "+lastName)
+		remainingTickets = remainingTickets - userTickets
 
+		fmt.Printf("%v tickets remaining for %v\n", remainingTickets, conferenceName)
+		fmt.Print("All Bookings", booking)
+	}
 }
-
-
