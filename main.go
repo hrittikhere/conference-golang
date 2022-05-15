@@ -6,6 +6,7 @@ import (
 )
 
 const conferenceTickets int = 50
+
 var remainingTickets uint = 50
 var conferenceName = "Go Conference"
 var bookings = []string{}
@@ -75,7 +76,6 @@ func getUserInput() (string, string, string, uint) {
 
 	return firstName, lastName, email, userTickets
 }
-
 
 func greetUsers() {
 	fmt.Printf("Welcome to %v booking application.\nWe have total of %v tickets and %v are still available.\nGet your tickets here to attend\n", conferenceName, conferenceTickets, remainingTickets)
